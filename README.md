@@ -1,5 +1,5 @@
 ### study-of-basic-gates
-
+## DATE:24/9/2024
 **AIM:** 
 
 To study and verify the truth table of logic gates in Quartus II using Verilog programming.
@@ -60,46 +60,35 @@ Y= A⊕B
 4.	Create nodes for inputs and outputs to generate the timing diagram.
 
 5.	For different input combinations generate the timing diagram.
-   
-**TRUTH TABLE**
-
-![Screenshot 2024-12-28 185305](https://github.com/user-attachments/assets/ca32f4ba-94fc-45c9-87cb-904abdf1d23a)
-
 
 
 **PROGRAM**
+~~~
+module gates(a,b,c1,c2,c3,c4,c5,c6,c7);
+input a,b;
+output c1,c2,c3,c4,c5,c6,c7;
+assign c1=~a;
+assign c2=a&b;
+assign c3=a|b;
+assign c4=~(a&b);
+assign c5=~(a|b);
+assign c6=a^b;
+assign c7=~(a^b);
+endmodule
+~~~
 Program for logic gates and verify its truth table in quartus using Verilog programming
 
- Developed by:PRAVISH
- 
+ Developed by: PRAVISH J
  RegisterNumber: 24901067
- ```
-module logic_gates(a, b, c1, c2, c3, c4, c5, c6, c7);
-    input a, b;
-    output c1, c2, c3, c4, c5, c6, c7;
-    assign c1 = ~a;
-    assign c2 = a & b;
-    assign c3 = a | b;
-    assign c4 = ~(a & b);
-    assign c5 = ~(a | b);
-    assign c6 = a ^ b;
-    assign c7 = ~(a ^ b);
-endmodule
-
-
-```
  
-**RTL**
+**Logic symbol & Truthtable**
+![exp1 logic gates](https://github.com/user-attachments/assets/d4e2b8c2-37d2-46be-a100-08163a499407)
 
-![Screenshot 2024-12-28 190229](https://github.com/user-attachments/assets/c2807d36-c7f4-4123-86b8-1e30254ebcfd)
+# RTL realization Output:
+![Screenshot 2024-11-18 153029](https://github.com/user-attachments/assets/f6e68d50-ec0f-4e95-9fef-a6dee07b42d3)
 
-
-**Output:** 
-
-![image](https://github.com/user-attachments/assets/5f61f5f3-b4a0-4a4c-bc25-ce834358969a)
-
+# waveform output
+![Screenshot 2024-11-19 081423](https://github.com/user-attachments/assets/1143fef9-4979-4949-b373-09767b9830be)
 
 **Result:**
-
-Thus the truth table of logic gates in Quartus II using verilog programming are studied,verified and executed successfully.
-
+Studied and verified the truth table of logic gates in Quartus II using Verilog programming.
