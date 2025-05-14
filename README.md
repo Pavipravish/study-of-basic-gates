@@ -1,5 +1,5 @@
 ### study-of-basic-gates
-## DATE:24/9/2024
+## DATE:1/5/2025
 **AIM:** 
 
 To study and verify the truth table of logic gates in Quartus II using Verilog programming.
